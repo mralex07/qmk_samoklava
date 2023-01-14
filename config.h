@@ -92,6 +92,10 @@
 #endif
 
 #ifdef POINTING_DEVICE_ENABLE 
+/* Handedness. */
+#	define MASTER_RIGHT
+// Pointing device is on the right split.
+#	define POINTING_DEVICE_RIGHT
 #	define POINTING_DEVICE_ROTATION_90
 #	define POINTING_DEVICE_INVERT_X
 #	define POINTING_DEVICE_INVERT_Y

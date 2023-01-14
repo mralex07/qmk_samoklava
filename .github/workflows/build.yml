@@ -9,19 +9,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        keyboard: [cradio]
-        conv: [kb2040, elite_pi]
+        keyboard: [corne]
+        conv: [stemcell]
         split: [left, right]
-        include:
-        - keyboard: cradio
-          conv: kb2040
-          split: ''
-        - keyboard: cradio
-          conv: elite_pi
-          split: ''
-        - keyboard: cradio
-          conv: ''
-        - keyboard: technik
 
     steps:
     - name: Checkout QMK

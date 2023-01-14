@@ -91,5 +91,14 @@
 #	define OLED_FONT_H "oled/oledfont.c"
 #endif
 
+#ifdef POINTING_DEVICE_ENABLE 
+#	define POINTING_DEVICE_ROTATION_90
+#	define POINTING_DEVICE_INVERT_X
+#	define POINTING_DEVICE_INVERT_Y
+#	define CIRQUE_PINNACLE_DIAMETER_MM 40
+#	define CIRQUE_PINNACLE_TAP_ENABLE
+#	define POINTING_DEVICE_GESTURES_SCROLL_ENABLE
+#endif
+
 // Layout macros
 #include "layout.h"

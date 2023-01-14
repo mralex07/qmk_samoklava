@@ -10,6 +10,8 @@ CONSOLE_ENABLE = no
 UNICODE_ENABLE = no
 SWAP_HANDS_ENABLE = no
 SPACE_CADET_ENABLE = no
+POINTING_DEVICE_ENABLE = yes
+POINTING_DEVICE_DRIVER = cirque_pinnacle_i2c
 
 # Common features
 LTO_ENABLE = yes
@@ -58,6 +60,5 @@ ifeq ($(strip $(KEYBOARD)), $(filter $(KEYBOARD), crkbd/rev1))
 endif
 
 # ifeq ($(strip $(KEYBOARD)), corne)
-POINTING_DEVICE_ENABLE = yes
-POINTING_DEVICE_DRIVER = cirque_pinnacle_i2c
+
 # endif

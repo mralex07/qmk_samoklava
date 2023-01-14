@@ -11,8 +11,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        keyboard: [cradio, corne]
-        conv: [stemcell, kb2040, elite_pi]
+        keyboard: [corne]
+        conv: [stemcell]
         split: [left, right]
         branch: [develop]
         include:

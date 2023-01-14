@@ -20,7 +20,7 @@ BOOTMAGIC_ENABLE = yes
 
 VPATH += $(USER_PATH)/oled $(USER_PATH)/rgb $(USER_PATH)/features
 OPT_DEFS += -DCAPS_UNLOCK -DINIT_EE_HANDS_$(shell echo ${SPLIT}|tr a-z A-Z)
-SRC += filterpaper.c caps_unlock.c combos.c
+SRC += mralex07.c caps_unlock.c combos.c
 
 ifeq ($(strip $(MCU)), atmega32u4)
 	BOOTLOADER = atmel-dfu

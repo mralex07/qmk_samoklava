@@ -57,7 +57,7 @@ ifeq ($(strip $(KEYBOARD)), $(filter $(KEYBOARD), crkbd/rev1))
 	endif
 endif
 
-ifeq ($(strip $(KEYBOARD)), corne)
-		POINTING_DEVICE_ENABLE = yes
-		POINTING_DEVICE_DRIVER = cirque_pinnacle_i2c
-endif
+# ifeq ($(strip $(KEYBOARD)), corne)
+POINTING_DEVICE_ENABLE = yes
+POINTING_DEVICE_DRIVER = cirque_pinnacle_i2c
+# endif
